@@ -10,8 +10,8 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Aspect
+//保证该AOP在@Transactional之前执行
 @Order(-1)
-// 保证该AOP在@Transactional之前执行
 @Component
 public class DynamicDataSourceAspect {
     private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceAspect.class);

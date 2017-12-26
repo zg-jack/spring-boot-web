@@ -59,8 +59,8 @@ public class MyTest {
     @Test
     public void test3() {
         ConsultConfigArea area = new ConsultConfigArea();
-        area.setAreaCode("ds31");
-        area.setAreaName("ds3name---1");
+        area.setAreaCode("dsVIP");
+        area.setAreaName("dsVIPtestName");
         area.setState(0);
         //        PageHelper.startPage(1, 1);
         System.out.println(service.saveArea(area));
@@ -89,8 +89,8 @@ public class MyTest {
     @Test
     public void test6() {
         ConsultConfigArea area = new ConsultConfigArea();
-        area.setAreaCode("base");
-        area.setAreaName("basename");
+        area.setAreaCode("HHVIP");
+        area.setAreaName("basenameVIP");
         area.setState(0);
         //        PageHelper.startPage(1, 1);
         System.out.println(service.saveAreaToBase(area));

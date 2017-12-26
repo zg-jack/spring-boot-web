@@ -14,12 +14,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.dongnao.jack.dynamicDataSource.DynamicDataSourceRegister;
 import com.dongnao.jack.servlet.JackServlet;
 
-/** 
- * @Description springboot启动器 
- * @ClassName   SpringBootTest 
- * @Date        2017年8月27日 下午3:38:36 
- * @Author      动脑学院-jack
- */
 /**
  * 
   @SpringBootApplication 相当于@Configuration,@EnableAutoConfiguration,@ComponentScan
@@ -33,6 +27,13 @@ import com.dongnao.jack.servlet.JackServlet;
 @Import({DynamicDataSourceRegister.class})
 //启注解事务管理，等同于xml配置方式的 <tx:annotation-driven />
 @EnableTransactionManagement
+/**
+ * 
+ * @Description SpringBootServletInitializer继承它的目的是为了打war
+ * @ClassName   SpringBootTest 
+ * @Date        2017年8月31日 下午10:38:55 
+ * @Author      动脑学院-jack
+ */
 public class SpringBootTest extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootTest.class, args);
